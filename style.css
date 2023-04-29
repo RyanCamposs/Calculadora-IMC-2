@@ -14,8 +14,19 @@ body {
 }
 
 .container {
-    height: 500px;
+   display: flex;
+   flex-wrap: wrap;
+   
 }
+
+.container-image img{
+  
+  
+    height: 480px;
+    width: 480px;
+    margin: 0 30px;
+}
+
 .container-box {
     padding: 40px;
     background-color: rgb(99, 97, 97);
@@ -45,7 +56,7 @@ input {
     text-align: center;
 }
 
-.button {
+.botao {
     width: 350px;
     background-color: white;
     border: 1px solid black;
@@ -55,7 +66,7 @@ input {
     color: white;
     margin-top: 40px;
     cursor:pointer
-}.button:hover {
+}.botao:hover {
     animation: rainbow 900ms infinite;
 }
 
@@ -72,7 +83,12 @@ input {
 .resultado {
     color: white;
     font-weight: bold;
-    margin-top: 20px;
+    font-size: 20px;
+    padding: 100px;
+    margin: 0 15px;
+    background-color: rgb(99, 97, 97);
+    transition: 4s;
+    
 }
 
 h1 {
@@ -81,4 +97,92 @@ h1 {
 
 .green-line {
     text-decoration: underline rgb(80, 255, 80);
+}
+
+.buttons-box {
+    display: flex;
+}
+.button-sexo {
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.homem {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.mulher {
+    background-color: rgb(196, 69, 168);
+    font-weight: bold;
+    color: white;
+    font-size: 19px;
+}
+
+.mulherIMG {
+    background: url("mulher.png");
+    visibility: visible;
+    height: 480px;
+    width: 480px;
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+    margin: 0 15px;
+}
+
+.homemIMG {
+    background: url("homem.png");
+    visibility: visible;
+    height: 480px;
+    width: 480px;
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+    margin: 0 15px;
+}
+
+@media screen and (max-width: 1250px) {
+    .container {
+        display: flex;
+        
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mulherIMG {
+        background: url("mulher.png");
+        visibility: visible;
+        height: 250px;
+        width: 250px;
+        background-position: center;
+        background-size: cover;
+        z-index: 100;
+        margin: 15px 15px;
+    }
+
+    .homemIMG {
+        background: url("homem.png");
+        visibility: visible;
+        height: 250px;
+        width: 250px;
+        background-position: center;
+        background-size: cover;
+        z-index: 100;
+        margin: 15px 15px;
+    }
+
+    .resultado {
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 100px;
+        margin: 0 15px;
+        background-color: rgb(99, 97, 97);
+        transition: 4s;
+        
+    }
 }

@@ -28,11 +28,23 @@ function calcular() {
         
     }else if (imc > 39.9) {
         res.innerHTML = `Seu imc é ${imc.toFixed(2)} <br> Obesidade grau 2`
-        }
-
-
-    
-
-
+    }
 
  }
+
+ let buttonH = document.getElementById('homembutton')
+ let buttonM = document.getElementById('mulherbutton')
+ var find = document.getElementById('imgFind')
+
+ buttonM.addEventListener('click', () =>{
+    find.classList.toggle('mulherIMG')
+    find.classList.remove('homemIMG')
+ })
+
+ buttonH.addEventListener('click',() => {
+    find.classList.toggle('homemIMG');
+    find.classList.remove('mulherIMG')
+ })
+
+
+

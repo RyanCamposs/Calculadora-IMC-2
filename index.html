@@ -8,11 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
+        <div class="container">
+            <div class="container-image" id="imgFind">
+              
+
+
+
+            </div>
             <div class="container-box">
                 <h1>Calculadora- <span class="green-line">IMC</span></h1>
                 <div class="altura">
                 <div class="input-class">
+                    <p>Sexo</p>
+                        <div class="buttons-box">
+                            <button class="button-sexo homem"  id="homembutton">Homem</button>
+                            <button class="button-sexo mulher"  id="mulherbutton">Mulher</button>
+                        </div>
+
                     <p>Altura em cm</p>
                     <input type="number" name="altura" id="altura">
                 </div>
@@ -21,13 +33,13 @@
                     <input type="number" name="peso" id="peso">
                 </div>
 
-                <button onclick="calcular()" class="button">Calcular</button>
+                <button onclick="calcular()" class="botao">Calcular</button>
             </div>
 
-                <div class="resultado" id="resultado"></div>
+                
           </div>
- 
-
+        </div>
+        <div class="resultado" id="resultado"></div>
 
     <script src="script.js"></script>
 </body>
